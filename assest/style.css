@@ -1,0 +1,111 @@
+section {
+    height: 100vh;
+}
+/* Custom properties/variables  */
+:root {
+    --main-gray: #303841;
+}
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.projects-section {
+    text-align: center;
+    padding: 15rem 2rem;
+    background: linear-gradient(180deg, #060203 0%, #1B0F04 100%);
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #fff;
+}
+@media (max-width: 28.75em) {
+    .projects-section-header {
+        font-size: 4rem;
+    }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 5rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+@media (max-width: 30.625em) {
+    .projects-section {
+        padding: 6rem 1rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.project {
+    background: #303841;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+.project-image {
+    height: calc(100% - 6.8rem);
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.home {
+    background: url(./img/Backgroung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
