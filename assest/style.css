@@ -109,3 +109,29 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.home div {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    height: 100%;
+}
+.home div h4 {
+    width: 40%;
+    font-family: Sanchez;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+@media (max-width: 30.625em) {
+    .home div {
+        padding: 0 40px;
+    }
+    .home div h4 {
+        width: 100%;
+        font-size: 25px;
+        line-height: 40px;
+
+    }
+}
