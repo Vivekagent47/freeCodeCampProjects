@@ -72,6 +72,9 @@ img {
     .projects-section-header {
         font-size: 4rem;
     }
+    section {
+        height: auto;
+    }
 }
 
 /* "Automagic" image grid using no media queries */
@@ -125,13 +128,21 @@ img {
     color: #FFFFFF;
 }
 @media (max-width: 30.625em) {
+    .home {
+        height: 50vh;
+    }
     .home div {
         padding: 0 40px;
     }
     .home div h4 {
         width: 100%;
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 30px;
 
     }
+}
+
+.cert {
+    max-height: 100vh;
+    height: auto;
 }
