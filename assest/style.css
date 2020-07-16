@@ -93,6 +93,7 @@ img {
     }
     .projects-grid {
         grid-template-columns: 1fr;
+        grid-gap: 2rem;
     }
 }
 .project {
@@ -105,8 +106,23 @@ img {
     height: 100%;
     object-fit: cover;
 }
-
-
+#projects h4, .cert h4 {
+    font-family: Sanchez;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 64px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 200px;
+}
+@media (max-width: 30.625em) {
+    #projects h4, .cert h4 {
+        padding-left: 40px;
+        font-size: 24px;
+        line-height: 50px;
+    }
+}
 .home {
     background: url(./img/Backgroung.jpg);
     background-repeat: no-repeat;
@@ -138,11 +154,11 @@ img {
         width: 100%;
         font-size: 24px;
         line-height: 30px;
-
     }
 }
 
 .cert {
+    background: linear-gradient(180deg, #060203 0%, #1B0F04 100%);
     max-height: 100vh;
     height: auto;
 }
