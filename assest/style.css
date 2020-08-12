@@ -61,6 +61,7 @@ img {
     text-align: center;
     padding: 15rem 2rem;
     background: linear-gradient(180deg, #060203 0%, #1B0F04 100%);
+    height: max-content;
 }
 
 .projects-section-header {
