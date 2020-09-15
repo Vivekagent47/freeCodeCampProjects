@@ -163,3 +163,9 @@ img {
     max-height: 100vh;
     height: auto;
 }
+.browsecode {
+    background: #fff;
+    color: #333333;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
